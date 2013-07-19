@@ -11,14 +11,16 @@
 <br>
 <br>	
 <% end %>
+
 <br>
+
 <ul>
 	
 	<% @shirts.each do |shirt| %>
 	
 	<li><%=image_tag  shirt.image %></li>
 	<li><%=link_to shirt.name, shirt_path(shirt) %></li>
-	<li><%= shirt.description %></li>
+	<li class="last"><%= shirt.description %></li>
 	
 	<% end %>
 	

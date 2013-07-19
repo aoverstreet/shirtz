@@ -1,0 +1,31 @@
+<h1>create a new shirt</h1>
+
+<!-- 
+<ul>
+	
+		<% @shirt.errors.full_messages.each do|msg|%>
+			<li><%= msg %></li>
+		<% end %>
+	
+	
+</ul>
+
+
+<ul>
+<%= form_for @shirt do |f|%>
+
+	<li><span><%= f.label :name%></span> <%= f.text_field :name%></li>
+	<li><span><%= f.label :description%></span> <%= f.text_field :description%></li>
+	<li><span><%= f.label :image%></span> <%= f.text_field :image%></li>
+	
+	
+<li><%= f.submit %></li>
+<% end %>
+
+
+
+</ul>
+ -->
+
+
+<%= render :partial => 'form' %>
